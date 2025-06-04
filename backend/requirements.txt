@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+transformers>=4.31.0
+torch
+datasets
+accelerate

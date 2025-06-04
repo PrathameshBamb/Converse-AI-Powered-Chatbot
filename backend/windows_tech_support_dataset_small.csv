@@ -1,0 +1,627 @@
+prompt,completion
+Question: How do I reset my Windows 10 password?,"To reset your Windows 10 password, follow these steps:
+1. Press Win + I to open Settings. 
+2. Click “Accounts,” then select “Sign-in options.” 
+3. Under “Password,” click “Change,” verify your current password, then enter and confirm your new one. 
+4. Click “Next” and “Finish,” then restart if prompted."
+Question: How do I update device drivers on Windows 10?,"To update device drivers on Windows 10, follow these steps:
+1. Right-click the Start button and choose “Device Manager.”
+2. Expand the category for the device you want to update (e.g., “Display adapters”).
+3. Right-click your device and select “Update driver.”
+4. Choose “Search automatically for updated driver software.” Windows will find and install it if available.
+5. If prompted, restart your PC to complete the installation."
+Question: How do I fix a blue screen of death on Windows 10?,"To fix a Blue Screen of Death (BSOD) on Windows 10, follow these steps:
+1. Take note of the stop code on the BSOD screen.
+2. Restart into Safe Mode: Press and hold Shift while clicking “Restart” from the Power menu → Troubleshoot → Advanced options → Startup Settings → Restart → Enable Safe Mode.
+3. In Safe Mode, open Device Manager (Win + X → Device Manager) and roll back or update any recently changed drivers.
+4. Run System File Checker: open Command Prompt as admin and run `sfc /scannow`, then reboot.
+5. If the issue persists, use System Restore: Control Panel → Recovery → Open System Restore → choose a restore point."
+Question: How do I improve startup speed on Windows 10?,"To improve startup speed on Windows 10, follow these steps:
+1. Open Task Manager (Ctrl + Shift + Esc) and go to the “Startup” tab. Disable non-essential startup apps.
+2. Press Win + I → System → Power & sleep → Additional power settings → Choose what the power buttons do → Change settings that are currently unavailable → uncheck “Turn on fast startup,” then click Save changes.
+3. Run Disk Cleanup (Win + R, type `cleanmgr`) and remove temporary files.
+4. Open “Defragment and Optimize Drives” and optimize your HDD (if applicable).
+5. Restart your PC and notice the improved startup time."
+Question: How do I troubleshoot Wi-Fi connectivity on Windows 10?,"To troubleshoot Wi-Fi connectivity on Windows 10, follow these steps:
+1. Click the Network icon in the taskbar, select your Wi-Fi SSID, click “Disconnect,” then “Connect.”
+2. Go to Settings → Network & Internet → Status → Network troubleshooter and follow prompts.
+3. Open Device Manager (Win + X → Device Manager) → Network adapters → right-click your Wi-Fi adapter → Update driver → Search automatically.
+4. Restart your router and PC.
+5. In Command Prompt (admin), run `ipconfig /release`, `ipconfig /renew`, and `ipconfig /flushdns`."
+Question: How do I configure a VPN on Windows 10?,"To configure a VPN on Windows 10, follow these steps:
+1. Gather your VPN details (server address, VPN type, username, password, and pre-shared key).
+2. Press Win + I → Network & Internet → VPN → Add a VPN connection.
+3. Under “VPN provider,” select “Windows (built-in).” Enter Connection name, Server name/address, VPN type, and pre-shared key if needed. Fill in Username and Password. Click Save.
+4. On the “VPN” page, click your new connection → Connect.
+5. If connection fails, run the network troubleshooter: Settings → Update & Security → Troubleshoot → Internet Connections."
+Question: How do I install Windows 10 updates manually?,"To install Windows 10 updates manually, follow these steps:
+1. Press Win + I → Update & Security → Windows Update → Check for updates. 
+2. If that fails, visit the Microsoft Update Catalog (https://www.catalog.update.microsoft.com/) and search for the KB number.
+3. Download the appropriate x64 or x86 package.
+4. Run the downloaded .msu file, follow prompts, and reboot when asked.
+5. Confirm installation via Windows Update → View update history."
+Question: How do I fix audio not working on Windows 10?,"To fix audio issues on Windows 10, follow these steps:
+1. Right-click the speaker icon → Open Sound settings → ensure the correct output device is selected.
+2. Right-click the speaker icon → Open Volume mixer → ensure none are muted.
+3. Open Device Manager → Sound, video and game controllers → right-click your audio device → Update driver → Search automatically → Restart if prompted.
+4. If still no sound, right-click the audio device → Disable device → Enable device.
+5. In Command Prompt (Admin), run `sfc /scannow` to repair system files → Reboot."
+Question: How do I recover deleted files on Windows 10?,"To recover deleted files on Windows 10, follow these steps:
+1. Check the Recycle Bin → right-click the file → Restore.
+2. If not found, navigate to the original folder → right-click → Properties → Previous Versions → select a snapshot → Restore.
+3. If “Previous Versions” is disabled, download Recuva (https://www.ccleaner.com/recuva), install, select file type and original location → Scan → Recover.
+4. Save recovered files to a different drive.
+5. Regularly back up important files to OneDrive or an external drive."
+Question: How do I use System Restore on Windows 10?,"To use System Restore on Windows 10, follow these steps:
+1. Press Win + R, type `rstrui`, and press Enter.
+2. Click Next → choose a restore point dated before the issue → Next → Finish.
+3. Your PC will reboot and apply the restore.
+4. Once complete, sign in and review the results.
+5. If needed, repeat and select an earlier restore point."
+Question: How do I disable automatic updates on Windows 10?,"To disable automatic updates on Windows 10, follow these steps:
+1. Press Win + R, type `services.msc`, and press Enter.
+2. Find “Windows Update,” right-click → Properties → Startup type → Disabled → Stop → Apply → OK.
+3. (Optional) In Group Policy Editor (Win + R → `gpedit.msc`), navigate to Computer Configuration → Administrative Templates → Windows Components → Windows Update → Configure Automatic Updates → Disabled → Apply → OK.
+4. Verify no updates are automatically downloaded."
+Question: How do I enable Dark Mode in Windows 10?,"To enable Dark Mode on Windows 10, follow these steps:
+1. Press Win + I → Personalization → Colors.
+2. Under “Choose your default app mode,” select “Dark.”
+3. To apply Dark Mode to File Explorer, under “Choose your default Windows mode,” select “Dark.”
+4. Your apps and File Explorer will switch to dark theme."
+Question: How do I uninstall pre-installed apps on Windows 10?,"To uninstall built-in apps on Windows 10, follow these steps:
+1. Press Win + I → Apps → Apps & features.
+2. Scroll to the app → Uninstall → confirm.
+3. If “Uninstall” is grayed out, open PowerShell (Admin) and run:
+   `Get-AppxPackage *AppName* | Remove-AppxPackage`.
+4. Restart your PC to complete removal."
+Question: How do I fix Windows 10 not recognizing USB drive?,"To fix Windows 10 not recognizing a USB drive, follow these steps:
+1. Try a different USB port and cable.
+2. Open Disk Management (Win + X → Disk Management) → if the drive appears as unallocated, right-click → Change Drive Letter and Paths → Add a letter.
+3. If “Unknown” or “Not Initialized,” right-click → Initialize Disk → follow prompts.
+4. In Device Manager (Win + X → Device Manager) → USB controllers → uninstall each “USB Root Hub” → Restart PC.
+5. In Command Prompt (Admin), run `chkdsk X: /f` (replace X with USB drive letter) to fix file system errors."
+Question: How do I extend the C drive in Windows 10?,"To extend the C: drive on Windows 10, follow these steps:
+1. Open Disk Management (Win + R → `diskmgmt.msc`).
+2. If there is unallocated space next to C:, right-click C: → Extend Volume → Next → Finish.
+3. If no unallocated space, shrink an adjacent partition: right-click it → Shrink Volume → enter size → Shrink → then extend C:.
+4. Confirm the new size in File Explorer."
+Question: How do I enable BitLocker encryption on Windows 10?,"To enable BitLocker encryption on Windows 10 Pro, follow these steps:
+1. Press Win + R → `control` → System and Security → BitLocker Drive Encryption.
+2. Click “Turn on BitLocker” next to the drive.
+3. Save the recovery key to your Microsoft account or a USB drive.
+4. Choose “Encrypt used disk space only” (faster) or “Encrypt entire drive” (more secure) → Next → Start Encrypting.
+5. Once complete, BitLocker is active; reboot if prompted."
+Question: How do I check disk for errors on Windows 10?,"To check your disk for errors on Windows 10, follow these steps:
+1. Open Command Prompt (Admin) (Win + X → Command Prompt (Admin)).
+2. Type `chkdsk C: /f` (replace C: with drive letter) and press Enter.
+3. If prompted, type “Y” to schedule on next restart.
+4. Restart your PC; CHKDSK will scan and fix errors before boot.
+5. Review the report in Event Viewer (Windows Logs → Application → Wininit)."
+Question: How do I fix high CPU usage on Windows 10?,"To fix high CPU usage on Windows 10, follow these steps:
+1. Open Task Manager (Ctrl + Shift + Esc) → Processes → sort by CPU usage.
+2. If a third-party app is high, right-click → End Task, then uninstall or update it.
+3. If “System Interrupts” or “Windows Module Installer Worker,” update Windows: Settings → Update & Security → Check for updates.
+4. Disable unnecessary startup items: Task Manager → Startup → right-click → Disable.
+5. Run a full antivirus scan (Windows Security → Virus & threat protection → Quick scan).
+6. Update device drivers: Device Manager → right-click → Update driver → Search automatically.
+7. In Command Prompt (Admin), run `sfc /scannow` to repair system files."
+Question: How do I run CHKDSK in Windows 10?,"To run CHKDSK in Windows 10, follow these steps:
+1. Open Command Prompt (Admin) (Win + X → Command Prompt (Admin)).
+2. Type `chkdsk C: /f /r` (replace C: with desired drive) and press Enter.
+3. If asked to schedule, type “Y” and press Enter.
+4. Restart your PC; CHKDSK will scan and fix disk errors before boot.
+5. After completion, Windows starts normally; view results in Event Viewer."
+Question: How do I submit feedback to Microsoft on Windows 10?,"To submit feedback to Microsoft on Windows 10, follow these steps:
+1. Press Win + F (or open the Feedback Hub app from Start).
+2. Sign in with your Microsoft account if prompted.
+3. Click “Add new feedback,” choose “Problem” or “Suggestion.”
+4. Describe the issue, add screenshots if needed, then click “Next.”
+5. Select relevant categories and click “Submit.” Track it under “My feedback.”"
+Question: How do I create a bootable USB for Windows 10 installation?,"To create a bootable USB for Windows 10 installation, follow these steps:
+1. Download the Media Creation Tool from Microsoft’s website.
+2. Run the tool, select “Create installation media” → Next.
+3. Choose “USB flash drive” and click Next → select your USB → Next.
+4. The tool downloads Windows 10 and makes the USB bootable.
+5. Restart your PC, set USB as first boot device in BIOS, and install Windows."
+Question: How do I change the default browser in Windows 10?,"To change the default browser on Windows 10, follow these steps:
+1. Press Win + I → Apps → Default apps.
+2. Under “Web browser,” click the current default and choose your preferred browser.
+3. If not listed, install the browser first.
+4. Close Settings; links will now open in your chosen browser."
+Question: How do I disable Cortana in Windows 10?,"To disable Cortana on Windows 10, follow these steps:
+1. Press Win + R → `regedit` → Enter.
+2. Navigate to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Windows Search`. Create “Windows Search” if not present.
+3. Right-click “Windows Search” → New → DWORD (32-bit) Value → name it “AllowCortana” → set its value to 0.
+4. Restart your PC; Cortana will be disabled.
+5. To re-enable, delete “AllowCortana” or set value to 1 and reboot."
+Question: How do I fix Windows 10 not shutting down?,"To fix Windows 10 that won’t shut down, follow these steps:
+1. Disable Fast Startup: Win + I → System → Power & sleep → Additional power settings → Choose what power buttons do → Change settings that are currently unavailable → uncheck “Turn on fast startup” → Save changes.
+2. Run the Power Troubleshooter: Win + I → Update & Security → Troubleshoot → Power → Run the troubleshooter.
+3. Open Device Manager (Win + X → Device Manager) → Network adapters → right-click each adapter → Disable device → check shutdown. Re-enable whichever didn’t fix it.
+4. Run `sfc /scannow` in an elevated Command Prompt to repair system files.
+5. Update all drivers, especially chipset and network, using the manufacturer’s website."
+Question: How do I manage startup programs in Windows 10 Task Manager?,"To manage startup programs on Windows 10, follow these steps:
+1. Press Ctrl + Shift + Esc to open Task Manager.
+2. Click the “Startup” tab.
+3. Right-click any app you don’t need on startup → Disable.
+4. To re-enable, right-click a disabled app → Enable.
+5. Close Task Manager; changes apply at next reboot."
+Question: How do I back up files to OneDrive on Windows 10?,"To back up files to OneDrive on Windows 10, follow these steps:
+1. Ensure you’re signed into OneDrive: click cloud icon → Sign in with Microsoft account.
+2. Open File Explorer → navigate to files/folders → drag them into your OneDrive folder.
+3. Right-click OneDrive icon → Settings → Backup tab → Manage backup → choose Desktop, Documents, Pictures → Start backup.
+4. Verify files online at onedrive.live.com."
+Question: How do I fix Windows 10 black screen after login?,"To fix a black screen after login on Windows 10, follow these steps:
+1. Force shutdown (hold power button 10 seconds), then restart into Safe Mode: hold Shift → click Restart → Troubleshoot → Advanced options → Startup Settings → Restart → select Safe Mode.
+2. In Safe Mode, open Device Manager (Win + X → Device Manager) → Display adapters → right-click GPU → Update driver → Search automatically. If no update, uninstall device → reboot.
+3. Press Ctrl + Shift + Esc → Task Manager. If Explorer.exe isn’t running, click File → Run new task → type `explorer.exe` → OK.
+4. Run `sfc /scannow` in Command Prompt (Admin) and then reboot.
+5. Disable startup items: Task Manager → Startup → Disable non-essential apps → reboot normally."
+Question: How do I adjust screen resolution in Windows 10?,"To adjust screen resolution on Windows 10, follow these steps:
+1. Right-click your desktop → Display settings.
+2. Under “Display resolution,” select a recommended resolution.
+3. Click “Keep changes” when prompted.
+4. For multiple monitors, select the monitor under “Rearrange displays” and adjust each separately."
+Question: How do I fix Windows 10 touchscreen not responding?,"To fix a non-responsive touchscreen on Windows 10, follow these steps:
+1. Clean the screen with a soft cloth.
+2. Press Win + R → `devmgmt.msc` → Enter. In Device Manager, expand “Human Interface Devices” → right-click “HID-compliant touch screen” → Disable device → after a few seconds, right-click → Enable device.
+3. Run the Hardware and Devices troubleshooter: Win + I → Update & Security → Troubleshoot → Hardware and Devices → Run.
+4. In Device Manager, right-click “HID-compliant touch screen” → Update driver → Search automatically.
+5. If issues persist, open “Calibrate the screen for pen or touch input” → Calibrate → follow on-screen prompts."
+Question: How do I configure dual monitors on Windows 10?,"To configure dual monitors on Windows 10, follow these steps:
+1. Connect both monitors to your PC.
+2. Press Win + P → Extend.
+3. Right-click desktop → Display settings → identify monitors by clicking “Identify.”
+4. Drag and drop to arrange them correctly, then click “Apply.”
+5. Ensure “Multiple displays” is set to “Extend these displays.” Adjust resolution for each monitor if needed."
+Question: How do I enable Windows Sandbox on Windows 10 Pro?,"To enable Windows Sandbox on Windows 10 Pro, follow these steps:
+1. Press Win + R → `optionalfeatures` → Enter.
+2. In Windows Features, check “Windows Sandbox” → OK → Restart when prompted.
+3. After reboot, press Start → type “Windows Sandbox” → Enter to launch.
+4. To disable, reopen Windows Features, uncheck “Windows Sandbox,” and reboot."
+Question: How do I fix text-to-speech not working on Windows 10?,"To fix text-to-speech (Narrator) issues on Windows 10, follow these steps:
+1. Press Win + Ctrl + Enter to toggle Narrator. If it doesn’t start, continue.
+2. Go to Settings → Ease of Access → Narrator → ensure “Use Narrator” is toggled On.
+3. In Control Panel (Win + R → `control`), go to “Speech Recognition” → “Text to Speech” → choose a voice (e.g., Microsoft David) → Preview voice → Apply.
+4. In Device Manager (Win + X → Device Manager) → Sound, video and game controllers → right-click audio device → Update driver.
+5. If still broken, create a new local user account and test Narrator there to rule out profile corruption."
+Question: How do I disable Windows 10 firewall temporarily?,"To disable the Windows 10 firewall temporarily, follow these steps:
+1. Press Win + I → Update & Security → Windows Security → Firewall & network protection.
+2. Click your active network (e.g., Private network) → toggle “Microsoft Defender Firewall” to Off → confirm.
+3. When done testing, return and toggle it back On.
+4. Or run Command Prompt (Admin) → `netsh advfirewall set allprofiles state off` to disable and `netsh advfirewall set allprofiles state on` to re-enable."
+Question: How do I change DNS settings in Windows 10?,"To change DNS settings on Windows 10, follow these steps:
+1. Press Win + R → `ncpa.cpl` → Enter.
+2. Right-click your network adapter → Properties → select “Internet Protocol Version 4 (TCP/IPv4)” → Properties.
+3. Choose “Use the following DNS server addresses,” enter Preferred (e.g., 8.8.8.8) and Alternate (e.g., 8.8.4.4) → OK → Close.
+4. In Command Prompt, run `ipconfig /flushdns` to clear old DNS cache."
+Question: How do I fix Windows 10 login loop?,"To fix a Windows 10 login loop, follow these steps:
+1. Boot into Safe Mode: hold Shift → click Restart → Troubleshoot → Advanced options → Startup Settings → Restart → select Safe Mode.
+2. In Safe Mode, press Win + R → `regedit` → navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options`. Delete any keys for `utilman.exe` or `osk.exe` with a “Debugger” value.
+3. Restart normally. If still looping, open Task Manager (Ctrl + Shift + Esc) → File → Run new task → `msconfig` → Boot tab → uncheck “Safe boot” → OK → Restart.
+4. If unresolved, create a new user in Safe Mode (Win + R → `lusrmgr.msc` → Users → New User). Reboot and log in with new account."
+Question: How do I clean install Windows 10 from USB?,"To clean install Windows 10 from USB, follow these steps:
+1. Create a bootable USB using the Media Creation Tool.
+2. Plug in the USB, reboot, enter BIOS/UEFI (F2/Del/Esc), set USB as first boot device, save and exit.
+3. On Windows Setup screen, select language → Next → Install now.
+4. Enter product key or choose “I don’t have a product key,” accept license terms.
+5. Select “Custom: Install Windows only (advanced),” delete existing partitions on target drive, select unallocated space → Next.
+6. Follow on-screen prompts to set up your user account."
+Question: How do I hide my email address on Windows 10 lock screen?,"To hide your email address on Windows 10 lock screen, follow these steps:
+1. Press Win + I → Accounts → Sign in with a local account instead → follow prompts to create a local account (this removes the email from the lock screen).
+2. If you want to keep your Microsoft account, open Registry Editor (Win + R → `regedit`) → navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent`. Create “CloudContent” if not exist. Under it, right-click → New → DWORD (32-bit) Value → name `DisableWindowsConsumerFeatures` → set value to 1 → Restart. This hides email and stops lock screen tips."
+Question: How do I fix Windows 10 update stuck at 0%?,"To fix Windows 10 updates stuck at 0%, follow these steps:
+1. Open Services (Win + R → `services.msc`) → right-click “Windows Update” → Stop.
+2. In File Explorer, go to `C:\Windows\SoftwareDistribution\Download` → delete all files.
+3. Return to Services → “Windows Update” → Start.
+4. Go to Settings → Update & Security → Check for updates.
+5. If still stuck, open Command Prompt (Admin) and run:
+   net stop wuauserv
+   net stop bits
+   rd /s /q C:\Windows\SoftwareDistribution
+   net start bits
+   net start wuauserv
+   Then re-check for updates."
+Question: How do I disable Windows Defender in Windows 10?,"To disable Windows Defender (Windows Security) on Windows 10, follow these steps:
+1. For Windows 10 Pro: Press Win + R → `gpedit.msc` → Enter → Computer Configuration → Administrative Templates → Windows Components → Microsoft Defender Antivirus → Double-click “Turn off Microsoft Defender Antivirus” → select “Enabled” → OK.
+2. For Windows 10 Home: Press Win + R → `regedit` → Enter → navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` (create if not exist) → right-click → New → DWORD (32-bit) → name `DisableAntiSpyware` → set value to 1 → Restart.
+3. Windows Defender is now disabled; to re-enable, set the policy back to Not Configured or delete the registry DWORD and reboot."
+Question: How do I fix Windows 10 slow File Explorer?,"To fix slow File Explorer on Windows 10, follow these steps:
+1. Open File Explorer → View tab → Options → General tab → set “Open File Explorer to:” to “This PC” → OK.
+2. Right-click any folder → Properties → Customize tab → “Optimize this folder for:” → “General items” → check “Also apply this template to all subfolders” → OK.
+3. In File Explorer Options (View tab → Options) → click “Clear” under “Privacy” → OK.
+4. In File Explorer Options → View tab → check “Always show icons, never thumbnails” → OK.
+5. Restart your PC and test Explorer speed again."
+Question: How do I disable OneDrive on Windows 10 startup?,"To disable OneDrive on Windows 10 startup, follow these steps:
+1. Right-click OneDrive icon in the notification area → Settings → Settings tab → uncheck “Start OneDrive automatically when I sign in to Windows” → OK.
+2. If OneDrive is running, right-click its icon → Close OneDrive.
+3. Optionally, open Task Manager (Ctrl + Shift + Esc) → Startup tab → find “Microsoft OneDrive” → Disable.
+4. Restart PC; OneDrive will no longer auto-launch."
+Question: How do I create a new local user account on Windows 10?,"To create a new local user account on Windows 10, follow these steps:
+1. Press Win + I → Accounts → Family & other users.
+2. Under “Other users,” click “Add someone else to this PC.”
+3. In the prompt, click “I don’t have this person’s sign-in information” → “Add a user without a Microsoft account.”
+4. Enter a username, password (optional), and password hint → Next.
+5. The new account appears; click it → Change account type → choose “Administrator” or leave as Standard → OK."
+Question: How do I remove a virus from Windows 10?,"To remove a virus from Windows 10, follow these steps:
+1. Disconnect from the internet to prevent further infection.
+2. Boot into Safe Mode: hold Shift → Restart → Troubleshoot → Advanced options → Startup Settings → Restart → select Safe Mode.
+3. Open Windows Security (Win + I → Update & Security → Windows Security) → Virus & threat protection → Quick scan → remove detected threats.
+4. Download and run Malwarebytes in Safe Mode: download from https://www.malwarebytes.com → install → Threat Scan → quarantine any infections → reboot.
+5. After reboot, run another security scan to confirm the system is clean."
+Question: How do I repair corrupted system files on Windows 10 with sfc?,"To repair corrupted system files on Windows 10 using SFC, follow these steps:
+1. Open Command Prompt as Administrator (Win + X → Command Prompt (Admin)).
+2. Type `sfc /scannow` and press Enter. The System File Checker scans and repairs files.
+3. Wait until completion. If errors cannot be fixed, run DISM: 
+   `DISM /Online /Cleanup-Image /RestoreHealth` 
+   then run `sfc /scannow` again.
+4. Reboot your PC and verify all issues are resolved."
+Question: How do I change Windows 10 power plan settings?,"To change power plan settings on Windows 10, follow these steps:
+1. Press Win + X → Power Options → Under “Related settings,” click “Additional power settings.”
+2. Click “Change plan settings” next to the active plan.
+3. Adjust “Turn off the display” and “Put the computer to sleep” as desired → Save changes.
+4. For advanced settings, click “Change advanced power settings,” tweak categories (e.g., Processor power management), and click OK.
+5. Close Settings; new power settings are now in effect."
+Question: How do I turn off keyboard backlight on Windows 10 laptop?,"To turn off keyboard backlight on a Windows 10 laptop, follow these steps:
+1. Look for a function key labeled with a keyboard icon (often F3, F4, F5). Press Fn + that key to toggle the backlight off.
+2. If no function key, open your laptop’s proprietary utility (e.g., HP Omen Command Center, Dell Quick	Set) and turn off the backlight.
+3. Check BIOS: restart → press BIOS key (F2, Del, or Esc) → locate “Keyboard Backlight” under Advanced settings → set to “Off” → Save & Exit.
+4. If no BIOS option, install the manufacturer’s keyboard driver/software from their website for backlight control.
+5. After applying, reboot and verify the backlight stays off."
+Question: How do I fix Windows 10 projector detection?,"To fix projector detection on Windows 10, follow these steps:
+1. Press Win + P and choose “Duplicate” or “Extend.” If the projector isn’t listed, continue.
+2. Right-click desktop → Display settings → click “Detect” under “Multiple displays.”
+3. Open Device Manager (Win + X → Device Manager) → Display adapters → right-click your GPU → Update driver → Search automatically → reboot.
+4. In Device Manager → Monitors → uninstall each monitor entry → Action → Scan for hardware changes.
+5. Ensure projector input mode (HDMI/VGA) matches the cable; restart and try Win + P again."
+Question: How do I calibrate touchscreen on Windows 10 tablet?,"To calibrate a touchscreen on Windows 10, follow these steps:
+1. Press Win + S, type “Calibrate,” and select “Calibrate the screen for pen or touch input.”
+2. In the Tablet PC Settings window, click “Calibrate.” If prompted, choose “Touch input.”
+3. Tap the crosshair target in each corner until calibration completes.
+4. Click “OK” to save the new calibration.
+5. If accuracy issues persist, disable and re-enable the touch device: Device Manager (Win + X → Device Manager) → Human Interface Devices → right-click “HID-compliant touch screen” → Disable → Enable → Recalibrate."
+Question: How do I enable Hyper-V on Windows 10 Pro?,"To enable Hyper-V on Windows 10 Pro, follow these steps:
+1. Press Win + R → `optionalfeatures` → Enter.
+2. In Windows Features, check “Hyper-V” (ensure “Hyper-V Management Tools” and “Hyper-V Platform” are selected) → OK → Restart.
+3. After reboot, press Start → type “Hyper-V Manager” → Enter.
+4. In Hyper-V Manager, select your PC → Action → New → Virtual Machine to create your first VM."
+Question: How do I shut down unresponsive apps in Windows 10?,"To shut down unresponsive apps on Windows 10, follow these steps:
+1. Press Ctrl + Shift + Esc to open Task Manager.
+2. In the “Processes” tab, find the app with “Not responding” next to it.
+3. Click the app → End task.
+4. If Task Manager itself is frozen, press Ctrl + Alt + Del → Task Manager → repeat.
+5. As a last resort, hold the power button for 10 seconds to force shutdown, then reboot."
+Question: How do I recover Windows 10 product key from registry?,"To recover your Windows 10 product key from the registry, follow these steps:
+1. Press Win + R → `regedit` → Enter.
+2. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform`.
+3. In the right pane, double-click “BackupProductKeyDefault.” The “Value data” field shows your 25-character product key.
+4. Copy the key and store it safely.
+5. Close Registry Editor."
+Question: How do I increase virtual memory (pagefile) in Windows 10?,"To increase virtual memory (pagefile) on Windows 10, follow these steps:
+1. Press Win + R → `sysdm.cpl` → Enter → Advanced tab.
+2. Under “Performance,” click “Settings” → Advanced tab → under “Virtual memory,” click “Change.”
+3. Uncheck “Automatically manage paging file size for all drives.” Select C:, choose “Custom size,” enter initial (1.5× RAM) and maximum (3× RAM) values (in MB) → Set → OK.
+4. Click OK on all dialogs → Restart your PC."
+Question: How do I set environment variables in Windows 10?,"To set environment variables on Windows 10, follow these steps:
+1. Press Win + R → `sysdm.cpl` → Enter → Advanced tab → Environment Variables.
+2. Under “User variables” or “System variables,” click “New.”
+3. Enter “Variable name” (e.g., JAVA_HOME) and “Variable value” (e.g., C:\Program Files\Java\jdk-14) → OK.
+4. To edit, select a variable → Edit → change value → OK.
+5. Open a new Command Prompt and run `echo %VARIABLE_NAME%` to confirm."
+Question: How do I disable automatic driver updates on Windows 10?,"To disable automatic driver updates on Windows 10, follow these steps:
+1. For Pro/Enterprise: Press Win + R → `gpedit.msc` → Enter → Computer Configuration → Administrative Templates → Windows Components → Windows Update → Enable “Do not include drivers with Windows Updates” → Apply → OK.
+2. For Home: Press Win + R → `regedit` → Enter → navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`. Create “WindowsUpdate” if not present. Under it, create a DWORD (32-bit) → name `ExcludeWUDriversInQualityUpdate` → set value to 1 → Restart.
+3. Windows Update will no longer install drivers automatically."
+Question: How do I enable remote desktop on Windows 10 Pro?,"To enable Remote Desktop on Windows 10 Pro, follow these steps:
+1. Press Win + I → System → Remote Desktop → toggle “Enable Remote Desktop” to On → confirm.
+2. Click “Advanced settings” to enable Network Level Authentication and note the port.
+3. Note your PC name (e.g., DESKTOP-1234). On the remote device, open Remote Desktop Connection → enter PC name → Connect → login with your credentials."
+Question: How do I reset network settings on Windows 10?,"To reset network settings on Windows 10, follow these steps:
+1. Press Win + I → Network & Internet → Status → Network reset → Reset now → Yes.
+2. Your PC will restart; network adapters will be reinstalled and settings reverted to defaults.
+3. After reboot, reconfigure Wi-Fi or VPN connections as needed."
+Question: How do I fix Windows 10 notification center not working?,"To fix the Notification Center on Windows 10, follow these steps:
+1. Restart Explorer: Ctrl + Shift + Esc → Processes → Windows Explorer → Restart.
+2. Open Settings → Update & Security → Troubleshoot → Search and Indexing → Run the troubleshooter.
+3. Re-register Action Center: open PowerShell (Admin) → run:
+   ```
+   Get-AppxPackage Microsoft.Windows.ShellExperienceHost | Foreach {Add-AppxPackage –DisableDevelopmentMode –Register ""$($_.InstallLocation)\AppXManifest.xml""}
+   Get-AppxPackage Microsoft.Windows.Cortana | Foreach {Add-AppxPackage –DisableDevelopmentMode –Register ""$($_.InstallLocation)\AppXManifest.xml""}
+   ```
+4. Restart your PC; Action Center should now function properly."
+Question: How do I change Windows 10 account picture?,"To change your account picture on Windows 10, follow these steps:
+1. Press Win + I → Accounts → Your info.
+2. Under “Create your picture,” click “Browse for one” or “Camera” to take a new photo.
+3. Select the image → Choose picture.
+4. The new picture updates immediately and appears at the sign-in screen."
+Question: How do I add or remove programs in Windows 10 Control Panel?,"To add or remove programs via Control Panel on Windows 10, follow these steps:
+1. Press Win + R → `control panel` → Enter → Programs → Programs and Features.
+2. To uninstall a program, select it → Uninstall → follow the prompts.
+3. To add Windows features, click “Turn Windows features on or off” on the left, check/uncheck items → OK → restart if prompted."
+Question: How do I fix Windows 10 search bar not working?,"To fix the Windows 10 search bar not working, follow these steps:
+1. Restart Explorer: Ctrl + Shift + Esc → Processes → Windows Explorer → Restart.
+2. Restart Windows Search service: Press Win + R → `services.msc` → Enter → find “Windows Search” → Restart.
+3. Rebuild search index: Win + R → `control /name Microsoft.IndexingOptions` → Advanced → Rebuild → OK.
+4. Run the Search and Indexing troubleshooter: Win + I → Update & Security → Troubleshoot → Search and Indexing → Run.
+5. If needed, re-register Cortana/Search: open PowerShell (Admin) and run:
+   ```
+   Get-AppxPackage -Name Microsoft.Windows.Cortana | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register ""$($_.InstallLocation)\AppXManifest.xml""}
+   ```
+   → restart."
+Question: How do I schedule a task in Windows 10 Task Scheduler?,"To schedule a task in Windows 10 Task Scheduler, follow these steps:
+1. Press Win + R → `taskschd.msc` → Enter.
+2. In the right pane, click “Create Basic Task.”
+3. Name the task (e.g., “Daily Backup”) → Next → choose trigger (Daily, Weekly, etc.) → Next.
+4. Set start date/time → Next → select “Start a program” → Next → browse to the executable (e.g., notepad.exe) → Next → Finish.
+5. To edit, double-click the task in Task Scheduler Library → adjust triggers or actions → OK."
+Question: How do I compress files using built-in Windows 10 zip?,"To compress files using the built-in Windows 10 ZIP feature, follow these steps:
+1. Select the file(s)/folder(s) → right-click → Send to → Compressed (zipped) folder.
+2. Rename the .zip file if desired.
+3. To add more files, drag them onto the existing .zip icon.
+4. To unzip, right-click the .zip → Extract All → choose location → Extract."
+Question: How do I fix Windows 10 static IP configuration?,"To fix a static IP configuration on Windows 10, follow these steps:
+1. Press Win + R → `ncpa.cpl` → Enter.
+2. Right-click your network adapter → Properties → select “Internet Protocol Version 4 (TCP/IPv4)” → Properties.
+3. Choose “Use the following IP address” → enter IP (e.g., 192.168.1.100), Subnet mask (255.255.255.0), Default gateway (192.168.1.1).
+4. Enter DNS servers (e.g., 8.8.8.8 and 8.8.4.4) → OK → Close.
+5. In Command Prompt (Admin), run `ipconfig /flushdns` and `ipconfig /renew`."
+Question: How do I reset Windows Update components on Windows 10?,"To reset Windows Update components on Windows 10, follow these steps:
+1. Open Command Prompt as Administrator (Win + X → Command Prompt (Admin)).
+2. Run:
+   ```
+   net stop wuauserv
+   net stop cryptSvc
+   net stop bits
+   net stop msiserver
+   ren C:\Windows\SoftwareDistribution SoftwareDistribution.old
+   ren C:\Windows\System32\catroot2 catroot2.old
+   net start wuauserv
+   net start cryptSvc
+   net start bits
+   net start msiserver
+   ```
+3. Close Command Prompt and restart your PC.
+4. Run Windows Update again."
+Question: How do I configure firewall rules in Windows 10?,"To configure firewall rules on Windows 10, follow these steps:
+1. Press Win + R → `wf.msc` → Enter.
+2. Choose “Inbound Rules” or “Outbound Rules” in the left pane.
+3. In the right pane, click “New Rule.”
+4. Select “Program” → Next → browse to the program’s .exe → Next.
+5. Choose “Allow the connection” or “Block the connection” → Next → choose profiles (Domain, Private, Public) → Next → give it a name → Finish."
+Question: How do I clean up disk space on Windows 10 using Disk Cleanup?,"To clean up disk space on Windows 10 using Disk Cleanup, follow these steps:
+1. Press Win + R → `cleanmgr` → Enter.
+2. Select drive (usually C:) → OK.
+3. Check boxes next to items (e.g., Temporary files, Recycle Bin) → OK → Delete Files.
+4. For system files, click “Clean up system files” → select C: again → OK → check Windows Update Cleanup → OK → Delete Files.
+5. Optionally, use “More Options” tab to remove old restore points."
+Question: How do I fix Windows 10 extreme battery drain?,"To fix extreme battery drain on Windows 10 laptops, follow these steps:
+1. Press Win + I → System → Battery → Battery usage by app → identify high-drain apps → disable background activity.
+2. Press Win + I → System → Power & sleep → Additional power settings → select “Power saver” plan.
+3. Open Device Manager (Win + X → Device Manager) → Batteries → right-click “Microsoft ACPI-Compliant Control Method Battery” → Uninstall device → Action → Scan for hardware changes.
+4. In Device Manager → Display adapters → Update or rollback display driver.
+5. Press Win + X → Windows PowerShell (Admin) → `powercfg /batteryreport /output ""C:\battery_report.html""` → open report to inspect battery health."
+Question: How do I configure Windows Hello on Windows 10?,"To configure Windows Hello on Windows 10, follow these steps:
+1. Press Win + I → Accounts → Sign-in options.
+2. Under “Windows Hello,” choose “Face,” “Fingerprint,” or “PIN” and click “Set up.”
+3. For Face/ fingerprint, scan your face/finger when prompted. For PIN, enter and confirm the PIN.
+4. After setup, sign out and sign back in to test Windows Hello.
+5. Ensure your IR camera or fingerprint reader drivers are updated for best performance."
+Question: How do I create a system image backup on Windows 10?,"To create a system image backup on Windows 10, follow these steps:
+1. Press Win + R → `control` → Enter → Backup and Restore (Windows 7).
+2. Click “Create a system image” in the left pane.
+3. Choose a location (external HDD, DVD, or network) → Next.
+4. Confirm drives to include → Start backup.
+5. Optionally, create a system repair disc when prompted. Use that disc to restore the image if needed."
+Question: How do I fix Windows 10 no sound from HDMI port?,"To fix no sound over HDMI on Windows 10, follow these steps:
+1. Ensure HDMI cable is firmly connected to both PC and monitor/TV.
+2. Right-click speaker icon → Open Sound settings → under “Output,” select the HDMI device.
+3. If not shown, right-click speaker icon → Sounds → Playback tab → right-click blank space → Show Disabled Devices → enable HDMI device → Set Default → OK.
+4. Open Device Manager (Win + X → Device Manager) → Sound, video and game controllers → right-click HDMI audio device → Update driver → Search automatically.
+5. If still no sound, uninstall the HDMI audio device → Restart → Windows reinstalls driver automatically."
+Question: How do I open Command Prompt as administrator in Windows 10?,"To open an elevated Command Prompt on Windows 10, follow these steps:
+1. Press Win.
+2. Type “cmd” or “Command Prompt.” 
+3. Right-click “Command Prompt” → Run as administrator → Yes on UAC prompt.
+4. You should see “Administrator: Command Prompt” in the title bar. Now run admin commands."
+Question: How do I disable Windows 10 automatic restart on BSOD?,"To disable automatic restart on a BSOD in Windows 10, follow these steps:
+1. Press Win + R → `sysdm.cpl` → Enter → Advanced tab.
+2. Under “Startup and Recovery,” click “Settings.”
+3. Uncheck “Automatically restart” under “System failure” → OK → OK.
+4. Next time a BSOD occurs, Windows will pause on the blue screen instead of rebooting."
+Question: How do I change keyboard layout in Windows 10?,"To change keyboard layout on Windows 10, follow these steps:
+1. Press Win + I → Time & Language → Language.
+2. Under “Preferred languages,” select your language → Options.
+3. Under “Keyboards,” click “Add a keyboard” → choose layout (e.g., US Dvorak).
+4. To switch between layouts, press Win + Space or click the keyboard icon in the taskbar.
+5. To remove a layout, select it → Remove."
+Question: How do I fix Windows 10 File Explorer crashing?,"To fix File Explorer crashes on Windows 10, follow these steps:
+1. Press Ctrl + Shift + Esc → Processes → Windows Explorer → Restart.
+2. Open File Explorer → View tab → Options → View tab → click “Clear” under “Privacy” → OK.
+3. Run System File Checker: Command Prompt (Admin) → `sfc /scannow` → reboot.
+4. Delete corrupt Quick Access files: PowerShell (Admin) → `del %APPDATA%\Microsoft\Windows\Recent\AutomaticDestinations\f01b4d95cf55d32a.automaticDestinations-ms` → restart Explorer.
+5. Check Event Viewer for “Explorer.exe” errors (Windows Logs → Application) and Google the faulting module if needed."
+Question: How do I configure proxy settings on Windows 10?,"To configure a proxy on Windows 10, follow these steps:
+1. Press Win + I → Network & Internet → Proxy.
+2. Under “Manual proxy setup,” toggle “Use a proxy server” to On.
+3. Enter Address (e.g., 192.168.1.100) and Port (e.g., 8080) → Save.
+4. To bypass proxy for local addresses, check “Don’t use proxy server for local (intranet) addresses.”
+5. To disable, toggle “Use a proxy server” to Off."
+Question: How do I disable hibernate on Windows 10?,"To disable hibernate on Windows 10, follow these steps:
+1. Open Command Prompt as Administrator (Win + X → Command Prompt (Admin)).
+2. Type `powercfg /hibernate off` and press Enter.
+3. Close the window. This removes hiberfil.sys and disables hibernation.
+4. To re-enable, run `powercfg /hibernate on` in an elevated prompt."
+Question: How do I view hidden files in Windows 10 File Explorer?,"To view hidden files in Windows 10 File Explorer, follow these steps:
+1. Open File Explorer → View tab.
+2. In “Show/hide” group, check “Hidden items.”
+3. Hidden files and folders will appear; they are slightly transparent.
+4. To also show file extensions, check “File name extensions” in the same group."
+Question: How do I uninstall a Windows 10 update that caused issues?,"To uninstall a problematic Windows 10 update, follow these steps:
+1. Press Win + I → Update & Security → Windows Update → View update history.
+2. Click “Uninstall updates.”
+3. In the list, select the update (KB number) → Uninstall → Yes → Restart.
+4. To hide it permanently, download and run Microsoft’s “Show or hide updates” troubleshooter and hide that KB."
+Question: How do I update BIOS from Windows 10?,"To update your BIOS from Windows 10, follow these steps:
+1. Press Win + R → `msinfo32` → Enter → note “System Model.”
+2. Go to your manufacturer’s support site (e.g., Dell, HP, ASUS) → find BIOS download for your model.
+3. Download the Windows BIOS updater (.exe).
+4. Run it as Administrator and follow on-screen instructions; do not power off mid-update.
+5. After reboot, verify the BIOS version via `msinfo32` → “BIOS Version/Date.”"
+Question: How do I fix Windows 10 time not syncing?,"To fix Windows 10 time synchronization issues, follow these steps:
+1. Right-click the clock → Adjust date/time → under “Synchronize your clock,” click “Sync now.”
+2. If sync fails, click “Additional date, time & regional settings” → Date and Time → Internet Time tab → Change settings → check “Synchronize with an Internet time server,” choose “time.windows.com,” click “Update now” → OK.
+3. If still failing, open Command Prompt (Admin) and run:
+   ```
+   net stop w32time
+   w32tm /unregister
+   w32tm /register
+   net start w32time
+   w32tm /resync
+   ```
+4. Run `w32tm /query /status` to confirm sync status."
+Question: How do I create and mount VHD in Windows 10?,"To create and mount a VHD on Windows 10, follow these steps:
+1. Press Win + X → Disk Management.
+2. In “Action” menu, click “Create VHD,” choose location (e.g., C:\VHDs\mydisk.vhdx), set size, click OK.
+3. Right-click the new disk (in left pane) → Initialize Disk → choose GPT/MBR → OK.
+4. Right-click unallocated space → New Simple Volume → Next → assign drive letter → Format as NTFS → Finish.
+5. To detach, right-click the disk (left pane) → Detach VHD."
+Question: How do I enable developer mode on Windows 10?,"To enable Developer Mode on Windows 10, follow these steps:
+1. Press Win + I → Update & Security → For developers.
+2. Under “Use developer features,” select “Developer mode” → Yes.
+3. After installation, you can sideload apps and use debugging tools.
+4. To disable, return to the same screen and choose “Sideload apps” or “Windows Store apps."
+Question: How do I fix Windows 10 mobile hotspot not working?,"To fix a Windows 10 mobile hotspot not working, follow these steps:
+1. Press Win + I → Network & Internet → Mobile hotspot → toggle On.
+2. Under “Share my Internet connection from,” choose your source (e.g., Wi-Fi).
+3. Click “Edit” to set network name and password.
+4. Click “Change adapter options” → right-click your source adapter → Properties → Sharing tab → check “Allow other network users to connect” and select hotspot adapter → OK.
+5. Update network drivers: Device Manager → Network adapters → update Wi-Fi and “Microsoft Wi-Fi Direct Virtual Adapter.”
+6. Run Network troubleshooter: Win + I → Update & Security → Troubleshoot → Internet connections → Run.
+7. To force-start hotspot, open PowerShell (Admin) and run:
+   ```
+   netsh wlan set hostednetwork mode=allow ssid=MySSID key=MyPass
+   netsh wlan start hostednetwork
+   ```
+   Replace MySSID and MyPass with your desired credentials."
+Question: How do I disable Windows 10 lock screen ads?,"To disable lock screen ads on Windows 10, follow these steps:
+1. Press Win + I → Personalization → Lock screen.
+2. Under “Background,” select “Picture” or “Slideshow” instead of “Windows spotlight.”
+3. Scroll down and toggle off “Get fun facts, tips, and more from Windows and Cortana on your lock screen.”
+4. To hide lock screen app notifications, remove entries under “Choose apps to show quick status.”
+5. These changes remove ads and suggestions from the lock screen."
+Question: How do I recover BitLocker recovery key in Windows 10?,"To recover your BitLocker recovery key on Windows 10, follow these steps:
+1. If your PC is linked to Azure AD, visit https://account.microsoft.com/devices/recoverykey and sign in to view the key.
+2. If you saved it to USB, insert the USB and open the .txt file containing the key.
+3. If saved to your Microsoft account, go to https://account.microsoft.com → Devices → find your device → Manage recovery keys.
+4. Use the 48-digit recovery key when prompted at the BitLocker lock screen.
+5. If you cannot locate the key, you will need to reset or reinstall Windows and data will be lost."
+Question: How do I fix Windows 10 camera app not opening?,"To fix the Camera app not opening on Windows 10, follow these steps:
+1. Press Win + I → Privacy → Camera → ensure “Allow apps to access your camera” is On.
+2. Scroll down to ensure Camera access for Microsoft Store apps is On.
+3. Open PowerShell (Admin) and run:
+   ```
+   Get-AppxPackage *Microsoft.WindowsCamera* | Remove-AppxPackage
+   Add-AppxPackage -DisableDevelopmentMode -Register ""C:\Program Files\WindowsApps\Microsoft.WindowsCamera_*\AppxManifest.xml""
+   ```
+4. If that fails, open Device Manager (Win + X → Device Manager) → Imaging devices or Cameras → right-click your camera → Update driver → Restart.
+5. Test the Camera app again."
+Question: How do I schedule automatic reboot after Windows 10 update?,"To schedule an automatic reboot after a Windows 10 update, follow these steps:
+1. Press Win + I → Update & Security → Windows Update → Restart options.
+2. Under “Schedule a time,” toggle On and set your preferred reboot time.
+3. Alternatively, use Group Policy: Win + R → `gpedit.msc` → Computer Configuration → Administrative Templates → Windows Components → Windows Update → “Always automatically restart at the scheduled time” → Enable → Apply.
+4. Your PC will now restart automatically at the scheduled time after an update."
+Question: How do I restore missing desktop icons on Windows 10?,"To restore missing desktop icons on Windows 10, follow these steps:
+1. Right-click desktop → View → ensure “Show desktop icons” is checked.
+2. Press Win + I → Personalization → Themes → Desktop icon settings.
+3. Check the icons you want (e.g., “Computer,” “Recycle Bin”) → OK.
+4. If a particular icon (e.g., This PC) is missing, ensure it’s not hidden: open File Explorer → navigate to `C:\Users\<YourName>\Desktop` → right-click empty space → View → check “Show hidden items.”
+5. Run `sfc /scannow` in elevated Prompt if icons still don’t appear."
+Question: How do I disable User Account Control (UAC) in Windows 10?,"To disable User Account Control (UAC) on Windows 10, follow these steps:
+1. Press Win + S → type “UAC” → select “Change User Account Control settings.”
+2. In the slider window, drag the slider down to “Never notify” → OK.
+3. Click Yes on the UAC prompt.
+4. UAC is now disabled; to re-enable, move the slider up and click OK."
+Question: How do I fix Windows 10 volume mixer not opening?,"To fix the Volume Mixer not opening on Windows 10, follow these steps:
+1. Restart Windows Explorer: Ctrl + Shift + Esc → Processes → Windows Explorer → Restart.
+2. Open Services (Win + R → `services.msc` → Enter) → Windows Audio → right-click → Restart. Also restart Windows Audio Endpoint Builder.
+3. In PowerShell (Admin), run:
+   ```
+   Get-AppxPackage -AllUsers *WindowsSoundRecorder* | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register ""$($_.InstallLocation)\AppXManifest.xml""}
+   ```
+4. If still broken, run `sfc /scannow` in elevated Command Prompt.
+5. Reboot and test Volume Mixer by right-clicking the speaker icon → Open Volume Mixer."
+Question: How do I reset Windows 10 to factory settings?,"To reset Windows 10 to factory settings, follow these steps:
+1. Press Win + I → Update & Security → Recovery.
+2. Under “Reset this PC,” click “Get started.”
+3. Choose “Remove everything” or “Keep my files” → follow on-screen prompts.
+4. If selecting “Remove everything,” choose to wipe the drive fully for security or just remove files.
+5. The PC will reboot and reinstall Windows; follow prompts to set up your user account."
+Question: How do I enable night light on Windows 10?,"To enable Night light on Windows 10, follow these steps:
+1. Press Win + I → System → Display.
+2. Under “Color,” toggle “Night light” to On.
+3. Click “Night light settings” to adjust strength and schedule (e.g., Sunset to sunrise).
+4. Close Settings; Night light will activate during the scheduled period."
+Question: How do I disable animations in Windows 10?,"To disable animations on Windows 10 for better performance, follow these steps:
+1. Press Win + R → `sysdm.cpl` → Enter → Advanced tab → Performance Settings.
+2. In Visual Effects, select “Adjust for best performance” or manually uncheck animations like “Animate windows when minimizing and maximizing.”
+3. Click Apply → OK → OK.
+4. Animations are now disabled, making the interface more responsive."
+Question: How do I use Windows 10 in Safe Mode?,"To boot into Safe Mode on Windows 10, follow these steps:
+1. Press Win + R → `msconfig` → Enter → Boot tab.
+2. Check “Safe boot” and select “Minimal” → OK.
+3. Click “Restart” when prompted.
+4. Windows will boot into Safe Mode. To return to normal mode, open msconfig again and uncheck “Safe boot” → Restart."
+Question: How do I enable compression on NTFS volume in Windows 10?,"To enable NTFS compression on a drive or folder in Windows 10, follow these steps:
+1. Open File Explorer → right-click the drive or folder → Properties.
+2. Under General tab, click “Advanced.”
+3. Check “Compress contents to save disk space” → OK → Apply.
+4. Choose “Apply changes to this folder, subfolders and files” → OK.
+5. Windows will compress the files in the background."
+Question: How do I fix Windows 10 sticky keys pop-up not working?,"To fix Sticky Keys shortcut not working on Windows 10, follow these steps:
+1. Press Win + I → Ease of Access → Keyboard.
+2. Under “Sticky Keys,” toggle it On. Click “Sticky Keys” and ensure “Allow the shortcut key to start Sticky Keys” is checked.
+3. If already checked, uncheck and recheck, then Restart.
+4. Test by pressing Shift key five times; the Sticky Keys dialog should appear.
+5. If still not working, run `sfc /scannow` in elevated Command Prompt."
+Question: How do I configure RAID in Windows 10 BIOS and software?,"To configure a software RAID on Windows 10, follow these steps:
+1. Open Disk Management (Win + X → Disk Management) → ensure two or more unallocated disks are available.
+2. Right-click unallocated space on one disk → New Mirrored Volume (RAID 1) or New Striped Volume (RAID 0) → Next.
+3. Select second disk to include → Next → assign drive letter → format as NTFS → Finish.
+4. Windows creates and formats the RAID volume; it appears as a single drive.
+5. For hardware RAID, reboot into BIOS/UEFI → RAID configuration utility → create array → then install Windows onto the RAID volume."
+Question: How do I disable IPv6 on Windows 10 network adapter?,"To disable IPv6 on a network adapter in Windows 10, follow these steps:
+1. Press Win + R → `ncpa.cpl` → Enter.
+2. Right-click your network adapter → Properties.
+3. Uncheck “Internet Protocol Version 6 (TCP/IPv6)” → OK.
+4. Restart your PC to apply changes.
+5. Confirm in Command Prompt: `ipconfig /all` shows no IPv6 address for that adapter."
+Question: How do I fix Windows 10 error 0x80070422 when starting services?,"To fix error 0x80070422 on Windows 10, follow these steps:
+1. Open Services (Win + R → `services.msc` → Enter).
+2. Find “Windows Update,” right-click → Properties → Startup type → Automatic → click Start → Apply → OK.
+3. Find “Background Intelligent Transfer Service (BITS),” right-click → Properties → Startup type → Automatic (Delayed Start) → click Start → Apply → OK.
+4. Open Command Prompt (Admin) and run:
+   ```
+   sc config wuauserv start= auto
+   sc config bits start= delayed-auto
+   ```
+5. Reboot and test the service; the error should be resolved."
+Question: How do I repair Windows 10 bootloader using bootrec?,"To repair the Windows 10 bootloader using `bootrec`, follow these steps:
+1. Boot from a Windows 10 installation USB or DVD.
+2. At Setup screen, click “Next,” then “Repair your computer” → Troubleshoot → Advanced options → Command Prompt.
+3. In Command Prompt, run:
+   ```
+   bootrec /fixmbr
+   bootrec /fixboot
+   bootrec /scanos
+   bootrec /rebuildbcd
+   ```
+4. If `/fixboot` returns “Access is denied,” run:
+   ```
+   bootsect /nt60 sys
+   ```
+   then retry `bootrec /fixboot`.
+5. Once all commands succeed, close CMD → Continue to reboot → Windows should start normally."
+Question: How do I fix issues on Windows 7?,"Sorry, I only provide technical support for Windows 10 and later."
+Question: How do I fix issues on Windows 8?,"Sorry, I only provide technical support for Windows 10 and later."
+Question: How do I fix issues on Windows XP?,"Sorry, I only provide technical support for Windows 10 and later."
+Question: How do I fix issues on Windows Vista?,"Sorry, I only provide technical support for Windows 10 and later."

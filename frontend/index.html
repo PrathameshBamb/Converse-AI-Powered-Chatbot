@@ -1,0 +1,135 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Converse AI-Powered Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <h1 class="title">Technical Support Chatbot</h1>
+    <div id="chat-window" class="chat-window"> -->
+
+    <!-- </div>
+    <div class="input-container">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Type your technical question here..."
+        autocomplete="off"
+      />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Converse AI Tech Support</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <!-- 1. Sidebar -->
+    <aside class="sidebar">
+      <!-- Logo at top -->
+      <div class="sidebar-logo">
+        <!-- Swap this SVG for your own logo if desired -->
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+          <path fill="#FFFFFF" d="M12 2C6.476 2 2 6.476 2 12s4.476 10 10 10 10-4.476 10-10S17.524 2 12 2z"/>
+        </svg>
+        <span>Converse AI</span>
+      </div>
+
+      <!-- "New chat" button -->
+      <button class="new-chat-btn" id="new-chat-btn">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
+          <path stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                d="M12 5v14M5 12h14"/>
+        </svg>
+        <span>New chat</span>
+      </button>
+
+      <!-- Chat list (placeholder) -->
+      <nav class="chat-list">
+        <div class="chat-list-item active">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path stroke="#C1C1C1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+          <span>Uncategorized Chat</span>
+        </div>
+        <!-- You can add more history items here if you implement storage later -->
+      </nav>
+
+      <!-- Footer links -->
+      <div class="sidebar-footer">
+        <button class="sidebar-footer-btn">Settings</button>
+        <button class="sidebar-footer-btn">Profile</button>
+      </div>
+    </aside>
+
+    <!-- 2. Main content area -->
+    <main class="main-content">
+      <!-- 2a. Chat header (hidden until a chat starts) -->
+      <header class="chat-header hidden">
+        <div class="chat-header-title">
+          <span class="model-name">Converse o3</span>
+        </div>
+      </header>
+
+      <!-- 2b. "Splash" when no chat open -->
+      <section class="chat-splash" id="chat-splash">
+        <div class="splash-content">
+          <h2>Where should we begin?</h2>
+          <form id="splash-form" class="splash-form">
+            <div class="splash-input-wrapper">
+              <input
+                type="text"
+                id="splash-input"
+                class="splash-input"
+                placeholder="Ask anything"
+                autocomplete="off"
+                autofocus
+              />
+              <button type="submit" class="splash-send-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.59 5.58L20 12 12 4 4 12z"
+                    fill="#FFFFFF"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- 2c. Chat area (hidden at first; becomes visible once a chat is started) -->
+      <section class="chat-area hidden" id="chat-area">
+        <div id="chat-history" class="chat-history"></div>
+        <form id="chat-form" class="chat-input-area">
+          <textarea
+            id="chat-input"
+            class="chat-input"
+            rows="1"
+            placeholder="Type a message..."
+            autofocus
+          ></textarea>
+          <button type="submit" class="send-button">Send</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
